@@ -1,0 +1,21 @@
+var speed = 2;
+
+draw = function() {
+    background(127, 204, 255);
+    
+    if(y>372)
+    {
+        speed= -2;
+    }
+    
+    if (y<0)
+    {
+        speed=2;
+    }
+    
+    fill(66, 66, 66);
+    ellipse(200, y, 50, 50);
+
+    // move the ball
+    y = y + speed;
+};
